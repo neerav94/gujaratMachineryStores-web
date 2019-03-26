@@ -1,0 +1,170 @@
+/* mobiles (landscape and portrait) */
+
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  .main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+  }
+
+  .logo-text {
+    font-size: 1.5em;
+    letter-spacing: 2px;
+  }
+
+  .svg-menu-icon {
+    height: 40px;
+    width: 40px;
+    pointer-events: none;
+  }
+
+  #laptopNav {
+    display: none;
+  }
+
+  .mobile-navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(0, 0, 0, 0.8);
+    padding: 16px;
+    text-align: center;
+  }
+
+  .svg-close-icon {
+    height: 40px;
+    width: 40px;
+    float: right;
+  }
+
+  .mobile-navigation-container {
+    padding: 120px 16px;
+  }
+
+  .mobile-navigation-links {
+    font-size: 24px;
+    padding: 16px;
+    color: #fff;
+  }
+  
+  .home-background-image {
+    width: 100%;
+    height: 600px;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-width: 550px) and (max-width: 800px) {
+  .main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 40px;
+    align-items: center;
+  }
+
+  .logo-text {
+    font-size: 2em;
+    letter-spacing: 2px;
+  }
+
+  .nav-container {
+    padding-top: 8px;
+    padding-right: 32px;
+  }
+
+  #laptopNav {
+    display: none;
+  }
+
+  .home-background-image {
+    width: 100%;
+    height: 720px;
+  }
+}
+
+/* Desktops and laptops ----------- */
+
+@media only screen and (min-width: 850px) and (max-width: 1024px) {
+  .main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 40px;
+    align-items: center;
+  }
+
+  .logo-text {
+    font-size: 2em;
+    letter-spacing: 2px;
+  }
+
+  .nav-container {
+    line-height: 8px;
+    padding-right: 32px;
+  }
+
+  #mobileNav {
+    display: none;
+  }
+
+  .nav-link {
+    font-size: 20px;
+    color: rgba(0, 0, 0, .5);
+    cursor: pointer;
+    padding: 0 8px;
+  }
+
+  .home-background-image {
+    width: 100%;
+    height: 700px;
+  }
+}
+
+/* bigger laptops */
+
+@media only screen and (min-width: 1224px) {
+  .main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 40px;
+    align-items: center;
+  }
+
+  .logo-text {
+    font-size: 2.5em;
+    letter-spacing: 2px;
+  }
+
+  .logo-text:hover {
+    color: #f52d62;
+    cursor: pointer;
+  }
+
+  .nav-container {
+    height: 32px;
+    padding-right: 32px;
+  }
+
+  #mobileNav {
+    display: none;
+  }
+
+  .nav-link {
+    font-size: 20px;
+    color: rgba(0, 0, 0, .5);
+    cursor: pointer;
+    padding: 0 8px;
+  }
+
+  .home-background-image {
+    width: 100%;
+    height: 720px;
+  }
+}

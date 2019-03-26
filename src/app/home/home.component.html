@@ -1,0 +1,90 @@
+<div>
+  <div id="home">
+    <div id="mainHeader" class="main-header">
+      <div class="display-row">
+        <div class="logo-text panton">GUJARAT MACHINERY STORES</div>
+      </div>
+      <div class="display-row nav-container">
+        <div id="mobileNav" (click)="_menuClicked()">
+          <object id="svg1" data="./assets/icons/menu.svg" type="image/svg+xml" class="svg-menu-icon"></object>
+        </div>
+        <div id="laptopNav" class="display-row">
+          <div class="nav-link">
+            <a href="#home" class="scrollLink" (click)="_scrollToDiv($event)">HOME</a>
+          </div>
+          <!-- <div class="nav-link">
+            <a href="#whyUs" class="scrollLink" (click)="_scrollToDiv($event)">WHY KENOME</a>
+          </div> -->
+          <div class="nav-link">
+            <a href="#products" class="scrollLink" (click)="_scrollToDiv($event)">PRODUCTS</a>
+          </div>
+          <div class="nav-link">
+            <a href="#aboutUs" class="scrollLink" (click)="_scrollToDiv($event)">ABOUT</a>
+          </div>
+          <div class="nav-link">
+            <a href="#contactUs" class="scrollLink" (click)="_scrollToDiv($event)">CONTACT</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="./assets/imgs/backgroundImage1.jpg" alt="Kanaflex" class="home-background-image">
+          </div>
+          <div class="item">
+            <img src="./assets/imgs/backgroundImage2.jpg" alt="HDPE Pipes" class="home-background-image">
+          </div>
+          <div class="item">
+            <img src="./assets/imgs/backgroundImage3.jpg" alt="Water tank" class="home-background-image">
+          </div>
+          <div class="item">
+            <img src="./assets/imgs/backgroundImage4.jpg" alt="TUF Ropes" class="home-background-image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="products">
+    <app-products></app-products>
+  </div>
+  <div id="aboutUs" class="dark-theme-1">
+    <app-about-us></app-about-us>
+  </div>
+  <div id="contactUs" class="dark-theme-2">
+    <app-contact-us></app-contact-us>
+  </div>
+  <div id="footer">
+    <div>&copy; Kenome 2018. All Rights Reserved.</div>
+  </div>
+</div>
+
+<div *ngIf="menuClickedFlag" class="mobile-navigation">
+  <div (click)="_menuClicked()">
+    <object id="svg2" data="./assets/icons/close.svg" (click)="_menuClicked()" type="image/svg+xml" class="svg-close-icon"></object>
+  </div>
+  <div (click)="_menuClicked()" class="mobile-navigation-container">
+    <div class="mobile-navigation-links">
+      <a href="#home" style="color: #fff;">Home</a>
+    </div>
+    <div class="mobile-navigation-links">
+      <a href="#products" style="color: #fff;">Products</a>
+    </div>
+    <div class="mobile-navigation-links">
+      <a href="#aboutUs" style="color: #fff;">About</a>
+    </div>
+    <div class="mobile-navigation-links">
+      <a href="#contactUs" style="color: #fff;">Contact</a>
+    </div>
+  </div>
+</div>
