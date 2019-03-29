@@ -196,7 +196,7 @@
 @media only screen and (min-width: 1224px) {
   .about-us-container {
     background: #252525;
-    background:  linear-gradient(rgba(0,0,0, .7), rgba(0,0,0,.7)), url(assets/imgs/aboutCompany.jpg) no-repeat center center;
+    /* background:  linear-gradient(rgba(0,0,0, .7), rgba(0,0,0,.7)), url(assets/imgs/aboutCompany.jpg) no-repeat center center; */
     padding: 80px;
   }
 
